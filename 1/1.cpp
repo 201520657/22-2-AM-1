@@ -160,7 +160,7 @@ void after_fight(int win, int lose, int num) {
 	maxx = 0;
 	r = person[win].r;
 	c = person[win].c;
-	
+
 	if (mp_g[r][c] > person[win].g) {
 		int temp = person[win].g;
 
@@ -194,7 +194,7 @@ void fight(int r, int c, int idx) {
 	int num_1 = person[idx].s + person[idx].g;
 	int num_2 = person[verse_idx].s + person[verse_idx].g;
 	int res = 0;
-	
+
 	if (num_1 > num_2) {
 		res = 1;
 	}
